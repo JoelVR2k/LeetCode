@@ -8,10 +8,9 @@
 
             var i = 0
             while i < newNums.count {
-                let num = newNums[i]
-                if !seen.contains(num) {
-                    seen.insert(num)
-                    uniqueArr.append(num)
+                if !seen.contains(newNums[i]) {
+                    seen.insert(newNums[i])
+                    uniqueArr.append(newNums[i])
                     newNums.remove(at: i)
                 } else {
                     i += 1
